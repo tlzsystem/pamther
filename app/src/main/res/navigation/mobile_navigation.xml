@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_dashboard">
+
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="cl.samueltoloza.pamther.ui.main.ui.dashboard.DashboardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/dashboard_fragment" />
+    <fragment
+        android:id="@+id/nav_booklets"
+        android:name="cl.samueltoloza.pamther.ui.main.ui.booklets.BookletsFragment"
+        android:label="@string/menu_booklets"
+        tools:layout="@layout/booklets_fragment" />
+    <fragment
+        android:id="@+id/nav_standards"
+        android:name="cl.samueltoloza.pamther.ui.main.ui.standards.StandardsFragment"
+        android:label="@string/menu_standard"
+        tools:layout="@layout/standards_fragment" />
+</navigation>
